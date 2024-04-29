@@ -1,0 +1,23 @@
+
+.wrapper {
+  width: 100%;
+  height: calc(100vh - (50px + 140px));
+  overflow: auto;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: #314fa2;;
+}
+
+.header {
+  height: 50px;
+  background-color: #5e70f7;
+  box-shadow: 0 -3px 8px 10px #021868;
+  z-index: 1;
+}
+
+.footer {
+  height: 140px;
+  background-color: #5e70f7;
+  box-shadow: 0 5px 10px 10px #021868;
+  z-index: 1;
+}

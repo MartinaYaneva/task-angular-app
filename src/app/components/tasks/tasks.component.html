@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="task-container">
+    <p class="title">Todo:</p>
+    <ng-container *ngFor="let task of sharedService.todoTasks">
+      <app-simple-task [title]="task.title" 
+                       [description]="task.description"
+                       [task]="task"
+                       (addToArchive)="addToArchive($event, task)">
+        <app-button (click)="setToDone(task)">Done</app-button>
+      </app-simple-task>
+    </ng-container>
+  </div>
+  <div class="task-container">
+    <p class="title">Done:</p>
+    <ng-container *ngFor="let task of sharedService.doneTasks">
+      <app-simple-task [title]="task.title" 
+                       [description]="task.description"
+                       (addToArchive)="addToArchive($event ,task)"></app-simple-task>
+    </ng-container>
+  </div>
+</div>

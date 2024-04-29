@@ -1,0 +1,10 @@
+<div class="task">
+  <h3 class="title">{{title}}</h3>
+  <hr>
+  <div class="description">{{description}}</div>
+  <hr>
+  <div class="task-actions">
+    <ng-content></ng-content>
+    <app-button (click)="toArchive()">Add to archive</app-button>
+  </div>
+</div>

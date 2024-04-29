@@ -1,0 +1,15 @@
+<ng-container *ngFor="let task of archivedTasks">
+  
+  <app-simple-task *ngIf="task.title !== 'Grocery Shopping'"
+                   [title]="task.title" 
+                   [description]="task.description">
+    <app-button (click)="restoreTask(task)">Restore</app-button>
+  </app-simple-task>
+
+  <div *ngIf="task.title === 'Grocery Shopping'">Some data here</div>
+
+</ng-container>
+
+<ng-template #other>
+  <div>Some data here</div>
+</ng-template>

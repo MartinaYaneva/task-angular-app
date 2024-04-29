@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+}
+
+.task-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+}
